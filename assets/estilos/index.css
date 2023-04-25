@@ -1,0 +1,383 @@
+:root{
+    --color-uno: #264653;
+    --color-dos: #2a9d8f ;
+    --color-tres: #e9c46a;
+    --color-cuatro: #f4a261 ;
+    --color-cinco: #e76f51;
+    --color-negro: #001219;
+    --color-blanco: #edf2f4;
+}
+
+html{
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+.header{
+    margin: 20px;
+}
+
+
+.principal-nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.logo a{
+    animation: logo-colorido 5s infinite;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#search-input{
+    margin-right: 20px;
+    padding: 20px;
+    width: 100%;
+    min-width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid var(--color-uno);
+}
+
+.busqueda-container{
+    position: relative;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+#boton-search{
+    position: absolute;
+    top: 25%;
+    left: 91%;
+    border: none;
+    color: var(--color-uno);
+    background-color: transparent;
+}
+
+#boton-search:hover{
+    cursor: pointer;
+    color: var(--color-cuatro);    
+}
+
+.sesion{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: var(--color-uno);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boton-sesion{
+    width: 100%;
+    color: var(--color-blanco);
+}
+
+.sesion:hover{
+    background-color: var(--color-cuatro);
+    transition: all .9s ease;
+}
+
+.busqueda-container__corto{
+    display: none;
+}
+
+
+.banner-container {
+    width: 100%;
+    height: 500px;
+    animation: background-change 10s infinite;
+    transition: all 1s ease;
+    margin-bottom: 40px;
+}
+
+
+.banner-container {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+    }
+
+.banner-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        animation: background-change 10s infinite;
+        transition: all 1s ease;
+    }
+
+    .banner-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        z-index: 10;
+    }
+
+    .banner-text h2{
+        background-color: var(--color-cinco);
+        color: var(--color-blanco);
+        font-size: 40px;
+        padding: 10px;
+    }
+    .banner-text p{
+        background-color: var(--color-blanco);
+        font-size: 25px;
+        font-weight: bold;
+        color: var(--color-uno);
+        padding: 10px;
+    }
+
+
+.banner-text a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color:var(--color-uno);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 12px;
+}
+
+.banner-text a:hover{
+    cursor: pointer;
+    background-color: var(--color-cinco);
+    transition: all 1s ease;
+}
+
+
+.productos-container{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.productos-container section{
+    margin-bottom: 50px;
+}
+
+.products-cards{
+    text-align: center;
+}
+
+.products-cards > *{
+    margin-bottom: 20px;
+}
+
+.cards-title{
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-price{
+    padding: 10px 0;
+    font-weight: bold;
+    color: var(--color-negro);
+}
+
+
+.cards-img{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#ropa-catalogo_hombres, #ropa-catalogo_mujeres,#catalogo-joyeria, #catalogo-electronico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.products-cards button{
+    width: 170px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: var(--color-dos);
+    color: var(--color-blanco);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.products-cards button:hover{
+    background-color: var(--color-uno);
+    transition: all .5s ease;
+}
+
+
+.footer-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 50px;
+    background-color: var(--color-negro);
+    color: var(--color-negro);
+}
+
+.logo-dos, .nav-footer__main{
+    flex-grow: 1;
+    
+}
+
+
+.logo-dos{
+    color: var(--color-cinco);
+    align-self: center;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.footer-nav__links {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.footer-nav__links a{
+    font-size: 18px;
+    color: var(--color-blanco)  ;
+}
+
+.footer-nav__links a:hover{
+    color: var(--color-cuatro);
+    transition: all .2s ease;
+}
+
+.seccion-contact{
+    flex-grow: 2;
+}
+.seccion-contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.seccion-contact h3{
+    margin-top: 10px;
+    font-size: 22px;
+    color: var(--color-cinco);
+}
+
+#footer-main__button{
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-uno);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 20px;
+}
+
+#footer-main__button:hover{
+    background-color: var(--color-blanco);
+    color: var(--color-uno);
+    font-weight: bold;
+    border-radius: 0;
+    transition: all 1s ease;
+}
+
+#input-name{
+    width: 90%;
+    height: 50px;
+    padding: 0 20px;
+    outline: 1px solid var(--color-blanco);
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+
+}
+
+#input-text{
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+    resize: none;
+    background-color: #001219;
+    outline: 1px solid var(--color-blanco);
+    color: var(--color-blanco);
+}
+
+
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: var(--color-negro);
+}
+
+.footer span {
+    margin: 10px;
+    letter-spacing: 1.2px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Animaciones */
+
+@keyframes logo-colorido{
+    0% { color: var(--color-uno); }
+    25% { color: var(--color-dos); }
+    50% { color: var(--color-negro); }
+    75% { color: var(--color-cuatro); }
+    100% { color: var(--color-cinco); }
+}
+
+@keyframes background-change {
+    0% { 
+        background-image: url("../img/imageuno.jpg");
+        background-size: cover; 
+        opacity: 1;
+    }
+    33% { 
+        background-image: url("../img/imagedos.jpg"); 
+        background-size: cover; 
+        opacity: 1;
+    }
+    66% { 
+        background-image: url("../img/imagetres.jpg");
+        background-size: cover;  
+        opacity: 1;
+    }
+    99% { 
+        opacity: .9;
+    }
+    100% { 
+        background-image: url("../img/imageuno.jpg");
+        background-size: cover;  
+        opacity: 1;
+    }
+}
+

@@ -1,0 +1,232 @@
+#prueba{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.imagenes-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+.producto-image{
+    width: 40%;
+}
+
+.producto-precio{
+    font-size: 22px;
+    font-weight: bold;
+}
+.producto-subcontenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+}
+
+.producto-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.producto-button, .button-cards{
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-uno);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 10px;
+}
+
+.producto-button:hover, .button-cards:hover{
+    background-color: var(--color-cuatro);
+    color: var(--color-blanco);
+    transition: all .5s ease ;
+}
+
+.recomendaciones{
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px solid var(--color-uno);
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.contenedor-recomendaciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-cards{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.title-cards{
+    width: 40%;
+    font-weight: bold;
+}
+
+.imagenes-cards{
+    width: 30%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.recomendaciones-title{
+    color: var(--color-cuatro);
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+.imagenes-contenedor{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.contenedor-descripcion{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    text-align: center;
+}
+
+.button-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description-cards{
+    font-size: 18px;
+}
+
+.descripcion-precio{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.modal-carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+  }
+
+  .logo-cart{
+    font-size: 40px;
+    color: var(--color-cuatro);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    right: -12px;
+  }
+
+.modal-carrito figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.boton-carro {
+    position: fixed;
+         bottom: 20px;
+         right: 20px;
+         width: 50px;
+         height: 50px;
+         border-radius: 25px;
+         background-color: var(--color-dos);
+}
+
+.boton-carro:hover{
+    background-color: var(--color-cuatro);
+    transition: all 0.5s ease;
+}
+
+.boton-carro:hover .logo-cart{
+    color: var(--color-blanco);
+    transition: all 0.5s ease;
+}
+      
+.contador {
+         position: absolute;
+         top: -10px;
+         right: -10px;
+         width: 20px;
+         height: 20px;
+         border-radius: 10px;
+         background-color: red;
+         color: white;
+         text-align: center;
+}
+
+@media screen and (max-width: 1000px){
+    #prueba{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "primero segundo"
+        "tercero tercero"
+        ;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .producto-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .producto-subcontenedor{
+        margin: 0 auto;
+        grid-area: tercero;
+        flex-direction: column;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .recomendaciones{
+        margin: 50px auto;
+    }
+
+    .contenedor-cards{
+        flex-direction: column;
+    }
+
+    .imagenes-cards{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+
+}

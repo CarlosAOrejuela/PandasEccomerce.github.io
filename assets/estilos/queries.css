@@ -1,0 +1,87 @@
+@media screen and (max-width: 1100px) {
+    #ropa-catalogo_hombres, #ropa-catalogo_mujeres,#catalogo-joyeria, #catalogo-electronico{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .cards-title{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+        .logo{
+            flex-grow: 2;
+        }
+        
+        #search-input{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            display: none;
+        }
+
+        #search-input.active{
+            display: block;
+        }
+        
+        .busqueda{
+            order: 1;
+        }
+
+        #boton-search{
+            background-color: transparent;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 50px;
+            background-color: var(--color-uno);
+            color: var(--color-blanco);
+            border-radius: 10px;
+            font-size: 42px;
+        }
+
+        #boton-search:hover{
+            background-color: var(--color-cuatro);
+            color: var(--color-blanco);
+            transition: all .9s ease;
+        }
+
+        .banner-text{
+            align-items: center;
+            width: 60%;
+            text-align: center;
+
+        }
+
+        .footer-main{
+            flex-direction: column;
+            align-items: center ;
+        }
+        .footer-nav{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3, 1fr);
+            align-items: center;
+            column-gap: 80px;
+        }
+
+        .seccion-contact{
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .seccion-contact form{
+            align-items: center;
+        }
+
+        #input-name, #input-text{
+            width: 70%;
+        }
+}

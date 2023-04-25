@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/estilos/normalize.css">
+    <link rel="stylesheet" href="../assets/estilos/index.css">
+    <link rel="stylesheet" href="../assets/estilos/queries.css">
+    <link rel="stylesheet" href="../assets/estilos/productos.css">
+    <link rel="stylesheet" href="../assets/estilos/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Carrito de Pandas</title>
+</head>
+<body>
+    <header class="header">
+        <ul class="principal-nav">
+            <li class="nav-cards logo">
+                <a href="../index.html">Pandas</a>
+            </li>
+            <li class="nav-cards busqueda">
+                <form class="busqueda-container">
+                    <input type="search" placeholder="¿Qué deseas buscar?" id="search-input">
+                    <button type="submit" id="boton-search"><span class="material-symbols-outlined">
+                        search
+                    </span></button>
+                </form>
+            </li>
+            <li class="nav-cards sesion">
+                    <a href='../PaginasAnexas/login.html' id="boton-sesion" class="boton-sesion">Login</a>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+    <section class="contenedor-compras">
+        <section class="compras-productos">
+            
+        </section>
+    </section>
+    <section class="footer-main">
+        <section class="footer-secciones logo-dos">
+            <h1>Pandas</h1>
+        </section>
+        <section class="footer-secciones nav-footer__main">
+            <ul class="footer-nav">
+                <li class="footer-nav__links"><a href="">Quienes Somos</a></li>
+                <li class="footer-nav__links"><a href="">Politica de privacidad</a></li>
+                <li class="footer-nav__links"><a href="">Programa de fidelidad</a></li>
+                <li class="footer-nav__links"><a href="">Nuestras Tiendas</a></li>
+                <li class="footer-nav__links"><a href="">Quiero ser franquiciado</a></li>
+                <li class="footer-nav__links"><a href="">Anuncie aqui</a></li>
+            </ul>
+        </section>
+        <section class="footer-secciones seccion-contact">
+            <form>
+                <h3>Habla con nosotros</h3>
+                <input type="text" placeholder="Nombre" id="input-name">
+                <textarea id="input-text" placeholder="Escribe tu mensaje"></textarea>
+                <button type="submit" id="footer-main__button">Enviar mensaje</button>
+            </form>
+        </section>
+    </section>
+    </main>
+    <footer class="footer">
+        <span class="footer-text">Desarrollado por Carlos Orejuela</span>
+        <span class="footer-text">2023</span>
+    </footer>
+    <script type="module" src="../assets/scripts/compras.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+.productos {
+    margin: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    column-gap: 120px;
+
+}
+
+.imagenes-contenedor {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 30px;
+    align-items: center;
+    margin: 20px auto;
+}
+
+
+
+.contenedor-cards {
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.imagenes-cards {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.title-cards {
+    width: 180px;
+    font-weight: bold;
+}
+
+.contenedor-descripcion {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.descripcion-precio {
+    font-weight: bold;
+}
+
+.description-cards {
+    width: 70%;
+    height: 200px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.button-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-uno);
+    color: var(--color-blanco);
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.button-cards:hover {
+    background-color: var(--color-cinco);
+    transition: all .6s ease;
+}
+
+.boton-carro {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--color-dos);
+}
+
+.boton-carro:hover {
+    background-color: var(--color-cuatro);
+    transition: all 0.5s ease;
+}
+
+.boton-carro:hover .logo-cart {
+    color: var(--color-blanco);
+    transition: all 0.5s ease;
+}
+
+.contador {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.logo-cart {
+    font-size: 40px;
+    color: var(--color-cuatro);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    right: -12px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .productos {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }
+
+    .description-cards {
+        width: 80%;
+        text-align: center;
+    }
+
+    .contenedor-descripcion p {
+        font-size: 20px;
+    }
+
+}
+
+
